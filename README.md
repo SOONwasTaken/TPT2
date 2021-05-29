@@ -2,7 +2,7 @@
 This is where my TPT2 scripts will be housed and updated.
 
 # Current Scripts
-Scripts below are most currently updated versions
+Scripts below are most currently updated versions.
 
 ## T1 Presser Scripts (v. 2.0)
 Because Factory Packages do not currently support T1 Pressers (due to the Hammer recipe being implemented), I've decided to make a few scripts to make them. 
@@ -11,7 +11,7 @@ There are 3 scripts, Presser_Main, Presser_Chip, Presser_Hammer. Maximum require
 
 ### Usage:
 - Import package into Facility AI.
-- Change the `Impulse` key to whatever you want (Default is `p`).
+- Change the `Impulse` key to whatever you want (Default is `P`).
 - Change `Pressers_To_Make` to however many you want.
 - Go into the Factory, enable the AI using F4, and press the `Impulse` key.
 

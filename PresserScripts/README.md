@@ -1,7 +1,12 @@
 # T1 Presser Scripts (v. 2.0)
 Because Factory Packages do not currently support T1 Pressers (due to the Hammer recipe being implemented), I've decided to make a few scripts to make them. 
 
-There are 3 scripts, Presser_Main, Presser_Chip, Presser_Hammer. Maximum required lines is 22. The Chip and Hammer scripts are helper scripts with precise values, so there's no **need to edit those**.
+There are 3 scripts, `Presser_Main`, `Presser_Chip`, `Presser_Hammer`. Minimum required lines is 22. The `Presser_Chip` and `Presser_Hammer` scripts are helper scripts with precise values, so there's no **need to edit those**.
+
+# IMPORTANT:
+There are some limitations to this script as outlined in the `Possible Changes / Optimizations` section, but most notably:
+- This script **does not** check current dust before initiating a craft, nor does it use ore to craft, so do ensure you have enough dust before using it.
+- The amount of dust required to make a T1 Presser is **`9*n` T1 Dust** and **`11*n` T2 Dust** where n is `Pressers_To_Make`.
 
 ## Usage:
 - Import package into Facility AI.
@@ -13,6 +18,7 @@ There are 3 scripts, Presser_Main, Presser_Chip, Presser_Hammer. Maximum require
 - ~~Debugging.~~ (Credit: Xenos6666, d0sboots, and Coco)
 - ~~Pressers materials are made 1 at a time.~~ (Updated as of v. 2.0)
 - Parallel processing.
+- Script does **not** check current dust count.
 - Script creates `Pressers_To_Make + 1` pressers due to loop being treated as `while(Pressers_Made <= Pressers_To_Make)`.
 - Produces leftovers (Hammer Rods and T1 Cables).
 
